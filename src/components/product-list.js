@@ -1,15 +1,13 @@
 import React from "react";
+import Product from "./product";
 
 const ProductList = () => {
   const shoeList = ["prada", "gucci", "Lv", "lacoste", "Nike"];
   return (
     <div className="ProductList">
-      ProductList
-      <ul>
-        {shoeList.map(shoe => (
-          <li>{shoe}</li>
-        ))}
-      </ul>
+      {shoeList.map(shoe => (
+        <Product name={shoe} />
+      ))}
     </div>
   );
 };
