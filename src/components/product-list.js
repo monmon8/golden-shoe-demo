@@ -1,10 +1,10 @@
 import React from "react";
 
-const Checkout = () => {
+const ProductList = () => {
   const shoeList = ["prada", "gucci", "Lv", "lacoste", "Nike"];
   return (
-    <div>
-      Checkout
+    <div className="ProductList">
+      ProductList
       <ul>
         {shoeList.map(shoe => (
           <li>{shoe}</li>
@@ -14,4 +14,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default ProductList;

@@ -1,13 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Checkout from './components/checkout'
+import React from "react";
+import "./App.css";
+import ProductList from "./components/product-list";
 
 function App() {
   return (
     <div className="App">
-    
-      <Checkout/ >
+      <ProductList />
     </div>
   );
 }
