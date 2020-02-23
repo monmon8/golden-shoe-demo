@@ -5,10 +5,10 @@ const ProductList = () => {
   const shoeList = [
     "prada",
     "gucci",
-    "louis vuitton",
+    "louis-vuitton",
     "lacoste",
-    "Nike",
-    "Adidas"
+    "nike",
+    "adidas"
   ];
   return (
     <div className="ProductList">
