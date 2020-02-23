@@ -12,8 +12,15 @@ const Product = props => {
         }}
       ></div>
       <span style={{ marginRight: "10px" }}>{props.name}</span>
-      <span style={{ marginRight: "10px" }}>{stockLevel}</span>
-      <button onClick={() => setStockLevel(stockLevel - 1)}>Buy</button>
+
+      {stockLevel > 0 ? (
+        <span>
+          <span style={{ marginRight: "10px" }}>{stockLevel}</span>
+          <button onClick={() => setStockLevel(stockLevel - 1)}>Buy</button>
+        </span>
+      ) : (
+        <span style={{ color: "red" }}>Out of stock</span>
+      )}
     </div>
   );
 };
